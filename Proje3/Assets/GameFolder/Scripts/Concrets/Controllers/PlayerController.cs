@@ -13,8 +13,9 @@ namespace Proje3.Controllers
     {
         [Header("Movement Information")] [SerializeField]
          float _moveSpeed = 5f;
-        [SerializeField]  float _turnSpeed = 5f;
+        [SerializeField]  float _turnSpeed = 3f;
         [SerializeField] private Transform _turnTransform;
+        [SerializeField] private WeaponController _currentWeapon;
         
         
         private IInputReader _input;
@@ -42,6 +43,10 @@ namespace Proje3.Controllers
          
             _xRotation.RotationAction(_input.Rotation.x,_turnSpeed);
             _yRotation.RotationAction(_input.Rotation.y, _turnSpeed);
+            if (_input.IsAttackButtonPress)
+            {
+                _currentWeapon.Attack();
+            }
         }
 
         private void FixedUpdate()

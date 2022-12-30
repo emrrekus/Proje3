@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 5556
+  controlID: 6116
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5557
+  controlID: 6092
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5558
+  controlID: 6093
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,9 +225,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 28e8ffff
-      m_LastClickedID: -6104
-      m_ExpandedIDs: b2efffff12fbffff286d0000
+      m_SelectedIDs: 286d0000
+      m_LastClickedID: 27944
+      m_ExpandedIDs: 6659ffffe266ffff0276ffff0c7bffffb2efffff80faffff84faffff88faffff8cfaffffe0faffff04fbffff08fbffff12fbffff146d0000286d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.571, y: 1.921973, z: -3.133902}
+    m_Target: {x: 0.9874581, y: 0.8828558, z: 0.008860815}
     speed: 2
-    m_Value: {x: 0.571, y: 1.921973, z: -3.133902}
+    m_Value: {x: 0.9874581, y: 0.8828558, z: 0.008860815}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -586,13 +586,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.13723616, y: 0.73721147, z: -0.15733235, w: -0.6426852}
+    m_Target: {x: -0.20034751, y: 0.22431675, z: -0.047251288, w: -0.95260465}
     speed: 2
-    m_Value: {x: -0.13722847, y: 0.73717016, z: -0.15732352, w: -0.6426492}
+    m_Value: {x: -0.20033294, y: 0.22430043, z: -0.047247853, w: -0.9525354}
   m_Size:
-    m_Target: 5.7549357
+    m_Target: 0.045603137
     speed: 2
-    m_Value: 5.7549357
+    m_Value: 0.045603137
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -822,22 +822,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GameFolder/Scripts/Concrets/Movements
+    - Assets/GameFolder/Scripts/Concrets/Inputs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/GameFolder/Scripts/Concrets/Movements
+  - Assets/GameFolder/Scripts/Concrets/Inputs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Emre\Desktop\Unity Learn Dersler\Proje3.1\Proje3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 59}
-    m_SelectedIDs: 186f0000
-    m_LastClickedID: 28440
-    m_ExpandedIDs: 00000000c66e0000c86e0000ca6e0000cc6e0000ce6e00000c6f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 106f0000
+    m_LastClickedID: 28432
+    m_ExpandedIDs: 00000000c66e0000ca6e0000cc6e0000ce6e0000dc6e00000c6f0000608900006c89000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,10 +890,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 28e8ffff
-    m_LastClickedInstanceID: -6104
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300001c6e0000c86d0000d46d0000
+    m_SelectedInstanceIDs: 286d0000
+    m_LastClickedInstanceID: 27944
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300001c6e0000c86d0000d46d0000bc320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -909,7 +909,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 541
+    m_CachedPref: -302
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
