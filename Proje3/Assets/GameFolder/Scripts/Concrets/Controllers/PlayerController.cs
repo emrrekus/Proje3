@@ -1,6 +1,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Proje3.Abstracts.Controllers;
 using Proje3.Abstracts.Inputs;
 using Proje3.Abstracts.Movements;
 using Proje3.Animations;
@@ -9,7 +10,7 @@ using UnityEngine;
 
 namespace Proje3.Controllers
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour,IEntityController
     {
         [Header("Movement Information")] [SerializeField]
          float _moveSpeed = 5f;
@@ -60,6 +61,8 @@ namespace Proje3.Controllers
             _yRotation.RotationAction(_input.Rotation.y, _turnSpeed);
             _animation.MoveAnimations(_direction.magnitude);
         }
+
+        
     }
 }
 

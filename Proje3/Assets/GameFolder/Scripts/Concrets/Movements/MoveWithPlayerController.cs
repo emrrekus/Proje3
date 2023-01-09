@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Mono.Cecil.Cil;
+using Proje3.Abstracts.Controllers;
 using Proje3.Abstracts.Movements;
 using Proje3.Controllers;
 using UnityEngine;
@@ -12,9 +13,9 @@ namespace Proje3.Movements
         private CharacterController _characterController;
         
 
-        public MoveWithPlayerController(PlayerController playerController)
+        public MoveWithPlayerController(IEntityController entityController)
         {
-            _characterController = playerController.GetComponent<CharacterController>();
+            _characterController = entityController.transform.GetComponent<CharacterController>();
             
         }
 
