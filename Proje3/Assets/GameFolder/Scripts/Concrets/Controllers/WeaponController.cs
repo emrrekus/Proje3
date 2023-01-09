@@ -1,49 +1,46 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Proje3.Abstracts.Combats;
+using Proje3.Combats;
+using Proje3.ScriptableObjects;
 using UnityEngine;
 
 namespace Proje3.Controllers
 {
     public class WeaponController : MonoBehaviour
     {
-        [SerializeField] private int _damage = 10;
+      
         [SerializeField] private bool _canFire;
-        [SerializeField] private float _attackMaxDelay=0.25f;
-        [SerializeField] private Camera _camera;
-        [SerializeField] float distance=100f;
-        [SerializeField] private LayerMask _layerMask;
+        
+        [SerializeField]  private Transform _transformObject;
+
+        [SerializeField] private RangeAttackSO _attackSo;
+       
         private float _currentTime;
         private IAttackType _attackType;
 
         private void Awake()
         {
-            
+            _attackType = new RangeAttackType(_transformObject.transform, _attackSo);
         }
 
         private void Update()
         {
             _currentTime += Time.deltaTime;
 
-            _canFire = _currentTime > _attackMaxDelay;
+            _canFire = _currentTime > _attackSo.AttackMaxDelay;
         }
 
         public void Attack()
         {
             if(!_canFire) return;
-
-           /* Ray ray = _camera.ViewportPointToRay(Vector3.one/2f);
-
-            if (Physics.Raycast(ray, out RaycastHit hit, distance, _layerMask))
-            {
-                if (hit.collider.TryGetComponent(out IHealth health))
-                {
-                    health.TakeDamager(_damage);
-                }
-            }*/
-            _currentTime = 0f;
+            
             _attackType.AttackAction();
+
+            _currentTime = 0f;
+            
             
         }
     }
