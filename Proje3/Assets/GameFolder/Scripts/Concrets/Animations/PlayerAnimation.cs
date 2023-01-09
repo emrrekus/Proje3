@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Proje3.Abstracts.Controllers;
 using Proje3.Controllers;
 using UnityEngine;
 
@@ -9,9 +10,9 @@ namespace Proje3.Animations
     {
         private Animator _animator;
 
-        public PlayerAnimation(PlayerController entity)
+        public PlayerAnimation(IEntityController entity)
         {
-            _animator = entity.GetComponentInChildren<Animator>();
+            _animator = entity.transform.GetComponentInChildren<Animator>();
         }
 
         public void MoveAnimations(float moveSpeed)
