@@ -23,6 +23,7 @@ namespace Proje3.Controllers
         private PlayerAnimation _animation;
         private IRotator _xRotation;
         private IRotator _yRotation;
+        private InventoryController _inventory;
         
         private Vector3 _direction;
     
@@ -35,6 +36,7 @@ namespace Proje3.Controllers
             _animation = new PlayerAnimation(this);
             _xRotation = new RotatorX(this);
             _yRotation = new RotatorY(this);
+            _inventory = GetComponent<InventoryController>();
         }
 
         private void Update()
@@ -44,7 +46,12 @@ namespace Proje3.Controllers
           
             if (_input.IsAttackButtonPress)
             {
-                //_currentWeapon.Attack();
+                _inventory.CurrentWeapon.Attack();
+            }
+
+            if (_input.IsInventoryButtonPressed)
+            {
+                _inventory.ChangeWeapon();
             }
         }
 
