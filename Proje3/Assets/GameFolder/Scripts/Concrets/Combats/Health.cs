@@ -26,7 +26,7 @@ namespace Proje3.Combats
             if(IsDead) return;
             
             _currentHealth -= damage;
-            Debug.Log(_currentHealth);
+            
             
         }
     }

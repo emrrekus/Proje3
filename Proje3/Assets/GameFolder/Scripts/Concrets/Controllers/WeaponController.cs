@@ -23,7 +23,7 @@ namespace Proje3.Controllers
 
         private void Awake()
         {
-            _attackType = new RangeAttackType(_transformObject.transform, _attackSo);
+            _attackType = _attackSo.GetAttackType(_transformObject);
         }
 
         private void Update()
