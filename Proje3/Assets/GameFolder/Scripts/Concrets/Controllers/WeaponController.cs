@@ -20,6 +20,7 @@ namespace Proje3.Controllers
        
         private float _currentTime;
         private IAttackType _attackType;
+        public RangeAttackSO AttackSo => _attackSo;
 
         private void Awake()
         {

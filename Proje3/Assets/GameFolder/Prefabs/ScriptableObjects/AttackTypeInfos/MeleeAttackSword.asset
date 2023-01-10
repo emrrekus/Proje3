@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fd585608e4347428e6da5ac4850919, type: 3}
   m_Name: MeleeAttackSword
   m_EditorClassIdentifier: 
-  _damage: 10
-  _floatValue: 1
+  _attackType: 1
+  _damage: 50
+  _floatValue: 0.8
   _layerMask:
     serializedVersion: 2
-    m_Bits: 0
-  _attackMaxDelay: 0.25
+    m_Bits: 2147483647
+  _attackMaxDelay: 0.5
+  _animatorOverride: {fileID: 22100000, guid: 13b862ae027edde4cafbdb2e5b1ffdb5, type: 2}

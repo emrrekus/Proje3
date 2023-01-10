@@ -16,9 +16,8 @@ namespace Proje3.Controllers
          float _moveSpeed = 5f;
         [SerializeField]  float _turnSpeed = 3f;
         [SerializeField] private Transform _turnTransform;
-        [SerializeField] private WeaponController _currentWeapon;
-        
-        
+
+
         private IInputReader _input;
         private IMover _mover;
         private PlayerAnimation _animation;
@@ -45,7 +44,7 @@ namespace Proje3.Controllers
           
             if (_input.IsAttackButtonPress)
             {
-                _currentWeapon.Attack();
+                //_currentWeapon.Attack();
             }
         }
 
