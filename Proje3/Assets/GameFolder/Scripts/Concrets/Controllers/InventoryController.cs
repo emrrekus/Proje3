@@ -54,6 +54,7 @@ namespace  Proje3.Controllers
                else
                {
                    weapon.gameObject.SetActive(false);
+                   
                }
                
            }
