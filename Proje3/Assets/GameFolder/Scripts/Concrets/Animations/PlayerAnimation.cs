@@ -20,6 +20,11 @@ namespace Proje3.Animations
             if(_animator.GetFloat("moveSpeed")== moveSpeed) return;
             _animator.SetFloat("moveSpeed", moveSpeed, 0.1f, Time.deltaTime);
         }
+
+        public void AttackAnimation(bool canAttack)
+        {
+            _animator.SetBool("isAttack",canAttack);
+        }
     }
 }
 

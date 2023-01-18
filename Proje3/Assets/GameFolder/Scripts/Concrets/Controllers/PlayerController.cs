@@ -42,7 +42,8 @@ namespace Proje3.Controllers
         private void Update()
         {
             _direction = _input.Direction;
-         
+            _xRotation.RotationAction(_input.Rotation.x,_turnSpeed);
+            _yRotation.RotationAction(_input.Rotation.y, _turnSpeed);
           
             if (_input.IsAttackButtonPress)
             {
@@ -63,9 +64,9 @@ namespace Proje3.Controllers
 
         private void LateUpdate()
         {
-            _xRotation.RotationAction(_input.Rotation.x,_turnSpeed);
-            _yRotation.RotationAction(_input.Rotation.y, _turnSpeed);
+           
             _animation.MoveAnimations(_direction.magnitude);
+            _animation.AttackAnimation(_input.IsAttackButtonPress);
         }
 
         
